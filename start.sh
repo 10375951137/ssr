@@ -2,6 +2,7 @@
 start(){
 nohup python /usr/local/ssr/shadowsocks/local.py -c /etc/ssr.json &
 source ~/.bashrc
+export ALL_PROXY=socks5://127.0.0.1:1080
 sleep 1
 pid=`netstat -anp|grep 1080|awk '{printf $7}'|cut -d/ -f1`
 if [ -n "$pid" ];then
