@@ -1,5 +1,5 @@
 #!/bin/bash
-wget 'https://raw.githubusercontent.com/10375951137/ssr/master/aliyun' -O /etc/apt/sources.list
+#wget 'https://raw.githubusercontent.com/10375951137/ssr/master/aliyun' -O /etc/apt/sources.list
 apt-get update 
 apt-get install git curl wget proxychains python vim
 ckgit=`type wget &>/dev/null || echo $?`
