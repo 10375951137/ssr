@@ -13,6 +13,7 @@ echo -e "如果没有设置PAC代理，在系统设置>网络>网络代理>自�
 }
 
 stop(){
+unset ALL_PROXY
     pid1=`netstat -anp|grep 1080|awk '{printf $7}'|cut -d/ -f1`
     if [ -n "$pid1" ];then
         kill -9 $pid1
