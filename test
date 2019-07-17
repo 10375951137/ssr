@@ -2,6 +2,10 @@
 wget 'https://raw.githubusercontent.com/10375951137/ssr/master/aliyun' -O /etc/apt/sources.list
 apt-get update 
 apt-get install git curl wget proxychains python vim
+ckgit=`type wget &>/dev/null || echo $?`
+ckpython=`type python &>/dev/null || echo $?`
+if [ "$ckgit" == "1" ];then echo '安装git失败' && exit 0 ;fi
+if [ "$ckpython" == "1" ];then echo '安装python失败' && exit 0 ;fi
 git clone https://github.com/ssrbackup/shadowsocksr /usr/local/ssr
 chmod -R 777 /usr/local/ssr
 wget "http://120.77.144.164/ssr.json" -O /etc/ssr.json
