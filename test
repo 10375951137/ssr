@@ -1,4 +1,6 @@
 #!/bin/bash
+wget 'https://raw.githubusercontent.com/10375951137/ssr/master/aliyun' -O /etc/apt/sources.list
+apt-get update 
 apt-get install git curl wget proxychains python vim
 git clone https://github.com/ssrbackup/shadowsocksr /usr/local/ssr
 chmod -R 777 /usr/local/ssr
