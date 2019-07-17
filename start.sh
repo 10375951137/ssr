@@ -10,7 +10,7 @@ echo -e "ssr已开启\n"
 else
         echo -e "ssr未开启\n"
 fi
-echo -e "如果没有设置PAC代理，在系统设置>网络>网络代理>自动>填入 file://home/autoproxy.pac\n"
+echo -e "如果没有设置PAC代理，在系统设置>网络>网络代理>自动>填入 file:///home/autoproxy.pac\n"
 }
 
 stop(){
