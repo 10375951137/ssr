@@ -14,6 +14,6 @@ wget 'https://raw.githubusercontent.com/10375951137/ssr/master/autoproxy.pac' -O
 echo 'export ALL_PROXY=socks5://127.0.0.1:1080'> ~/.bashrc
 wget 'https://raw.githubusercontent.com/10375951137/ssr/master/start.sh' -O /usr/bin/ssr
 chmod 777 /usr/bin/ssr
-echo -e "\n\n在系统设置>网络>网络代理>自动>填入 file:///home/autoproxy.pac\n\n输入ssr启动\n\n"
+echo -e "\n\n在系统设置>网络>网络代理>自动>填入 file:///home/autoproxy.pac\n\n输入ssr启动 \n\n"
 exit 0
 
